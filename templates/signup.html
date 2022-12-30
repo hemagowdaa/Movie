@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>SIGN UP</title>
+    <script>
+      function page(){
+          window.open("http://127.0.0.1:5000/")
+      }
+      </script>
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <h1>SIGN UP</h1>
     <p>Please fill out this form with the required information</p>
-    <form method="post" action='C:\Users\hemas\Desktop\movie\signup1.html'>
+    <form method="post" action='http://127.0.0.1:5000/' target="_self">
       <fieldset>
         <label for="first-name">Enter Your Name: <input id="first-name" name="first-name" type="text" required /></label>
         <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
         <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
       </fieldset>
-      <input type="submit" value="Submit" />
-      <button type ="button" onclick="C:\Users\hemas\Desktop\movie\signup1.html">signup</button>>
     </form>
+    <button onclick="page()">submit</button>
   </body>
-</html>
+</html>`
